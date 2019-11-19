@@ -13,6 +13,8 @@ See below for details.
 ### Serial Bootloader
 The STM32 microcontroller has a built in serial(UART) bootloader, that is activated by pressing the user button while applying power to the esp32MX-E board. Once in the bootloader mode, we need a method to connect to the UART on the STM32. A simple way to do this is to have software on the ESP32 act as a bridge between the STM32 and virtual comm port chip. This enables us to use the STM32CubeProgrammer (STM32CubeProg) to program the STM32 via the UART. For this to work, the UART on the ESP32 has to be configured for 115200 baud, **even** parity, and 1 stop bit.
 
+After programming the STM32 with the STM32CubeProgrammer, we can use this same setup to communicate with the UART on the STM32 via a serial port terminal. This is very useful for debugging. **Note** that the UART on the STM32 has to be configured for 115200 baud, **even** parity, and 1 stop bit. This is to match the settings required by the STM32CubeProgrammer, and which we used for our ESP32 bridge firmware.
+
 ### ST-Link Programmer
 To program an STM32 chip using a ST-Link programmer, we need to connect the GND, Reset, SWDIO and SWCLK of the STM32 chip to the corresponding pins of the ST-Link programmer. These pins are all available available on the pin header of the esp32MX-E.
 
