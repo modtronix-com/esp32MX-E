@@ -3,7 +3,7 @@ Documentation for the Modtronix esp32MX-E board.
 # STM32F030 Secondary Microcontroller
 The esp32MX-E has a secondary STM32F030F4 microcontroller. It controls the PHY reset circuitry, and provides additional I/O via the the I2C port of the ESP32. It can also be programmed with custom firmware.
 
-## Programming
+## Programming the STM32F030
 The STM32F030F4 can be programmed via the following methods:
 - Serial Port Bootloader
 - ST-Link programmer
