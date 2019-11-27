@@ -25,5 +25,13 @@ enclosure.
 | --- | --- |
 | ![Image of pt3mx](pt3mx/pt3mx_pcb_top_w800.png) | ![Image of pt1mx](../images/fordoc/esp32mx-e_as_db_in_enclosure__open_2_w800.jpg) |
 
+# fpan-mxe
+This folder contains the frontpanel used when the esp32MX-E is used together with the pt3mx(or custom board) baseboard, and the RM2015S
+enclosure. This frontpanel is a standard PCB (1 or 2 layers), with black solder mask. By default, we get them manufactured using HASL(Hot Air Solder Level) surface finish. For a bit extra, you can get it manufactured with the ENIG(Immersion Gold) surface finish, which adds a premium look.
+
+| | |
+| --- | --- |
+| ![Image of pt1mx](../images/fordoc/fpan-mxe_w800.jpg) | ![Image of pt1mx](../images/fordoc/esp32mx-e_in_enclosure_w800.jpg) |
+
 
 
