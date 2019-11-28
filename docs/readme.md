@@ -13,6 +13,48 @@ The esp32MX-E has an advanced power supply circuit that accommodates multiple in
 # Reliability
 Capacitors, in particular, are often the cause of failure in electronic devices. We have sourced the capacitors in esp32MX-E from reputable manufacturers like Panasonic, Samsung, Murata, TDK, and Yageo. Furthermore, all of our capacitor voltages are overrated by at least 190%.
 
+# User I/O
+esp32MX-E has a secondary 32-bit ARM processor (STM32F030F4) that serves by default as an I²C port expander. If required, you can program this secondary microcontroller with custom firmware.
+
+# Features & Specifications
+
+- **esp32 Module**
+    - 32-bit LX6 microprocessor operating at 160 or 240 MHz
+    - 4 MB Flash
+    - 520 KB SRAM
+- **Storage**: Micro SD card slot
+- **Wi-Fi**: 802.11 b/g/n
+- **Bluetooth**: v4.2 BR/EDR & BLE
+- **USB**: Type C connector
+    - Virtual COM port via USB
+    - Programmable via USB
+    - Power via USB
+- **User I/O**:
+    - 22 pins of which 4 are inputs only.
+    - Four 5 V tolerant I/O pins
+    - Not all I/Os are available when the SD Card is used
+    - Programmable pull-up and pull-down resistors on most inputs
+- **Secondary Processor**: I²C I/O expander implemented with a user programmable STM32F030F4
+- **Expansion Pin Headers**: Two standard 2.54 mm (0.1") expansion pin headers
+    - One with 14 pins (2x7)
+    - One with 20 pins (2x10)
+- **Power Supply**: Switch Mode
+    - 5 V, over 2 A of current for user applications
+    - 3.3 V, over 2 A of current for user applications
+- **Power Sources**:
+    - USB Type C connector
+    - 2.1 mm barrel connector
+    - Vx external power supply pin
+- **Supply Voltage**: 4.5 V to 16 V (via 2.1 mm Barrel connector or Vx pin)
+- **Operating Temperature**:
+    - Standard version: 0° C to 85° C
+    - Industrial version: -40° C to 85° C
+- **Physical Controls**:
+    - User LED
+    - Button
+- **Compact Size**: 64.4 mm x 42 mm (2.54" x 1.65")
+- **Enclosure**: Optional
+
 # Integration into Custom Hardware
 Designed both for standalone use and for integration into larger projects, esp32MX-E has two female headers, so you can plug a small expansion board into it or use esp32MX-E itself as a daughterboard. All connectors, switches and LEDs are on one side of the board, which makes it far easier to design custom enclosures.
 
