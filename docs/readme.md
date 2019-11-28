@@ -4,9 +4,9 @@ The esp32MX-E is a versatile ESP32 based board with support for Ethernet and USB
 
 # Schematics & Dimensions
 The esp32MX-E schematics & dimensions are available in the "images" folder:
-- [Schematics Page1](../images/esp32MX-E_schematics_pg1.png)
-- [Schematics Page2](../images/esp32MX-E_schematics_pg2.png)
-- [Dimensions](../images/esp32MX-E_dimensions.png)
+- [Schematics Page1](../images/esp32MX-E_schematics_pg1.png?raw=true)
+- [Schematics Page2](../images/esp32MX-E_schematics_pg2.png?raw=true)
+- [Dimensions](../images/esp32MX-E_dimensions.png?raw=true)
 
 # Power
 The esp32MX-E has an advanced power supply circuit that accommodates multiple inputs, provides 3.3 V and 5 V outputs, and delivers over 2 A of current to the user. It has high current switch mode regulators, at both 3.3 V and 5 V, to ensure low power consumption and high efficiency. Power can be supplied via the USB C connector, a 2.1 mm barrel connector, or the external power supply pin. This allows board designers to integrate the esp32MX-E as a daughterboard and get 3.3 V, 5 V, and supply voltage via the pin header connector.
