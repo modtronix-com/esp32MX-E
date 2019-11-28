@@ -1,5 +1,30 @@
 Documentation for the Modtronix esp32MX-E board.
 
+The esp32MX-E is a versatile ESP32 based board with support for Ethernet and USB Type C, among other features. It is designed with ease-of-integration in mind, so you can use it to simplify and accelerate the development of your own custom boards. 
+
+# Schematics
+The esp32MX-E schematics is available in the "images" folder:
+- [Schematics Page1](../images/esp32MX-E_schematics_pg1.png)
+- [Schematics Page2](../images/esp32MX-E_schematics_pg2.png)
+
+# Power
+The esp32MX-E has an advanced power supply circuit that accommodates multiple inputs, provides 3.3 V and 5 V outputs, and delivers over 2 A of current to the user. It has high current switch mode regulators, at both 3.3 V and 5 V, to ensure low power consumption and high efficiency. Power can be supplied via the USB C connector, a 2.1 mm barrel connector, or the external power supply pin. This allows board designers to integrate the esp32MX-E as a daughterboard and get 3.3 V, 5 V, and supply voltage via the pin header connector.
+
+# Reliability
+Capacitors, in particular, are often the cause of failure in electronic devices. We have sourced the capacitors in esp32MX-E from reputable manufacturers like Panasonic, Samsung, Murata, TDK, and Yageo. Furthermore, all of our capacitor voltages are overrated by at least 190%.
+
+# Integration into Custom Hardware
+Designed both for standalone use and for integration into larger projects, esp32MX-E has two female headers, so you can plug a small expansion board into it or use esp32MX-E itself as a daughterboard. All connectors, switches and LEDs are on one side of the board, which makes it far easier to design custom enclosures.
+
+We supply raised male headers, for when esp32MX-E is used as a daughterboard, that provide 14.5 mm of space between it and the baseboard. A single board spacer and a screw are all you need for a secure fit, and we provide both a threaded and a non-threaded 14.5 mm spacer. Two additional screw holes are available, but are not required when using esp32MX-E as a daughterboard.
+
+The Eagle Schematics and PCB files for all prototype boards and faceplates are available in [in the PCB folder](../pcb).
+
+| | |
+| --- | --- |
+| ![ ](../images/fordoc/esp32mx-e_in_enclosure_w800.jpg) | ![ ](../images/fordoc/esp32mx-e_with_proto_db_w800.jpg) |
+| ![ ](../images/fordoc/esp32mx-e_as_db_in_enclosure__open_w800.jpg) | ![ ](../images/fordoc/esp32mx-e_as_db_in_enclosure__open_2_w800.jpg) |
+
 # STM32F030 Secondary Microcontroller
 The esp32MX-E has a secondary STM32F030F4 microcontroller. It controls the PHY reset circuitry, and provides additional I/O via the the I2C port of the ESP32. It can also be programmed with custom firmware.
 
