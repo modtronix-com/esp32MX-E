@@ -1,6 +1,6 @@
 Documentation for the Modtronix esp32MX-E board.
 
-The esp32MX-E is a versatile ESP32 based board with support for Ethernet and USB Type C, among other features. It is designed with ease-of-integration in mind, so you can use it to simplify and accelerate the development of your own custom boards. 
+The esp32MX-E is a versatile ESP32 based board with support for Ethernet, WiFi, Bluetooth, USB Type C, and more. It is designed with ease-of-integration in mind, so you can use it to simplify and accelerate the development of your own custom boards. 
 
 # Schematics & Dimensions
 The esp32MX-E schematics & dimensions are available in the "images" folder:
