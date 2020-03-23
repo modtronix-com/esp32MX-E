@@ -7,18 +7,13 @@ To view the output of the virtual COM port, connect the board to the USB port a 
 
 
 ## ESP-IDF
-his example currently only runs on ESP-IDF v4.0-beta2. And, the "components\esp_eth\src\esp_eth_phy_lan8720.c" file in the ESP-IDF folder has to be replaced with the file in "esp-idf_v4.0-beta2_replace_files\components\esp_eth\src\esp_eth_phy_lan8720.c". We are working on resolving this issue, and to get the latest v4.0 to work. Hope to have it working soon.
+It was built and tested with v4.0 of ESP-IDF, the official development framework for the ESP32 chip from Espressif(manufacturers of theee ESP32). For details, see [github.com/espressif/esp-idf](https://github.com/espressif/esp-idf)
 
-To obtain ESP-IDF v4.0-beta2, follow the guide on this page:
-[docs.espressif.com/projects/esp-idf/en/v4.0-beta2/get-started/index.html](https://docs.espressif.com/projects/esp-idf/en/v4.0-beta2/get-started/index.html)  
-As mentioned in the "Get ESP-IDF" section, the best way to get it is to use the GIT command:  
-`git clone -b v4.0-beta2 --recursive https://github.com/espressif/esp-idf.git`
-
+See the [README.md](../README.md) file in the upper level 'examples/idf' directory for more information about examples, and how to install ESP-IDF.
 
 ## Building and Flashing
-See the [ESP-IDF guide](https://docs.espressif.com/projects/esp-idf/en/v4.0-beta2/get-started/index.html) for details how to build and flash the project. Basically, all that has to be done is:
-- Install ESP-IDF v4.0-beta2 on your computer
-- Replace the "esp_eth_phy_lan8720.c" file in the created ESP-IDF folder.
+See the "Getting Started" section in the [ESP-IDF guide](https://docs.espressif.com/projects/esp-idf/en/v4.0/get-started/index.html) for details how to build and flash the project. Basically, all that has to be done is:
+- Install ESP-IDF v4.0 on your computer
 - Start the "ESP-IDF Command Prompt", will be installed in step above
 - Change working directory to this folder (../examples/idf/ethernet)
 - Connect the esp32MX-E to a USB port on your PC. Note in device manager what virtual COM port is created for it. The next step assumes it is 5.

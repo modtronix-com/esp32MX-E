@@ -4,6 +4,9 @@ This folder contains examples using ESP-IDF, the official development framework 
 
 They have been built using **v4.0**, with Long Term Support by Espressif. For details on installing the development environment, see this page:  
 https://docs.espressif.com/projects/esp-idf/en/v4.0/get-started/index.html  
-It might also work with the latest stable realease, but if this is not v4.0, it means we did not test these examples with it:  
+It might also work with the latest stable realease. We have however currently only tested it with v4.0:  
 https://docs.espressif.com/projects/esp-idf/en/stable/get-started/
+
+As mentioned in the "Get ESP-IDF" section, the best way to get it is to use the GIT command:  
+`git clone -b v4.0 --recursive https://github.com/espressif/esp-idf.git`
 
