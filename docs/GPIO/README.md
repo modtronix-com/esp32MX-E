@@ -3,7 +3,7 @@
 # Pinouts & GPIO Pins #
 
 | ESP32 Pin | Analog | DAC/T | Serial | Function | Note |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | GPIO0  | ADC2-1  | Touch-1 |           | **NOT available**, used by Bootloader and PHY | Default **Pull-Up**. Bootloader Mode=0, Run Mode=1 |
 | GPIO1  |         |         | TX0       | **Available** if USB comm not used. USB TX.| On the ESP32-NodeMCU, this pin is used for the USB to Serial converter TX pin    |
 | GPIO2  | ADC2-2  | Touch-2 |           | **Available** if SD not used. SD Card. 47k PU| Default **Pull-Down**. Must be 0 to enter Bootloader Mode (when GPIO0=0). |
