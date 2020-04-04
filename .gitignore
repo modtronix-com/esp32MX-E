@@ -1,6 +1,9 @@
-_Shortcut__*.lnk
-esp32MX-E.code-workspace
 
+# Modtronix Specific
+_Shortcut__*.lnk
+
+# Visual Studio Code
+esp32MX-E.code-workspace
 
 ## Following is from ESP-IDF gitignore file
 .config

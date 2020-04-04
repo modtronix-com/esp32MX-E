@@ -68,6 +68,16 @@ The Eagle Schematics and PCB files for all prototype boards and faceplates are a
 | ![ ](../images/fordoc/esp32mx-e_in_enclosure_w800.jpg) | ![ ](../images/fordoc/esp32mx-e_with_proto_db_w800.jpg) |
 | ![ ](../images/fordoc/esp32mx-e_as_db_in_enclosure__open_w800.jpg) | ![ ](../images/fordoc/esp32mx-e_as_db_in_enclosure__open_2_w800.jpg) |
 
+
+# Software Development
+The two most popular ways to develop software for the esp32MX-E is using the official "Espressif ESP-IDF" or Arduino. The Arduino option is by far the easyest to get started. But, ESP-IDF provided many more options, and a true RTOS environment.
+
+## Espressif ESP-IDF
+For details to use the official ESP-IDF with the esp32MX-E, see [the "idf" examples folder](../examples/idf/README.md).
+
+## Arduino
+For details to use the official ESP-IDF with the esp32MX-E, see [the "idf" examples folder](../examples/arduino/README.md).
+
 # STM32F030 Secondary Microcontroller
 The esp32MX-E has a secondary STM32F030F4 microcontroller. It controls the PHY reset circuitry, and provides additional I/O via the the I2C port of the ESP32. It can also be programmed with custom firmware.
 
