@@ -1,6 +1,6 @@
 
 # Examples using Arduino IDE
-This folder contains examples using Arduino for ESP32. For details, see [ithub.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32)
+This folder contains examples using Arduino for ESP32. For details, see [Github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32)
 
 ## Installation
 The examples provided in this folder have been build using [v1.0.4](https://github.com/espressif/arduino-esp32/releases/tag/1.0.4) of Arduino-ESP32, which uses v3.2 of the Espressif ESP-IDE. For details on installing it, see this page:  
@@ -8,8 +8,14 @@ https://github.com/espressif/arduino-esp32#installation-instructions
 
 In addition, we also used VS Code, with the Microsoft Arduino Plugin.
 
-## Modifications
-Currently the Arduino-ESP32 library does not include support the the esp32MX-E by default. To add it to the list of available boards in the Arduino IDE, the following has to be done:
+## Usage
+In the Tools menu of the IDE, select the "ESP32 Pico Kit" board. We might add the "esp32MX-E" board
+to future versions of Arduino ESP32, but currently it is not required.
+
+## Additional Modifications
+The followig can be done to have the esp32MX-E listed as an available board in the Tools menu of the IDE, but it is NOT required. As mentioned above, using the "ESP32 Pico Kit" board works fine.   
+
+Currently the Arduino-ESP32 board manager does not list the esp32MX-E as an available board by default. To add it to the list of available boards in the Arduino IDE(in Tools menu), the following can to be done:
 - After installing the Arduino IDE and the Arduino-ESP32 board, locate the "boards.txt" file in the ESP32 folder. It will be located in the following folder of your Arduino installation: "..\packages\esp32\hardware\esp32\1.0.4"
 - Add the code given below to the end of this file(or to top of file after ").
 

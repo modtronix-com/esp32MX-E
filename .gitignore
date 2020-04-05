@@ -1,6 +1,6 @@
 
 # Modtronix Specific
-_Shortcut__*.lnk
+*_Shortcut*.lnk
 
 # Visual Studio Code
 esp32MX-E.code-workspace

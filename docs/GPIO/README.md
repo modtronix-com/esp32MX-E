@@ -1,10 +1,17 @@
 
 
+
+
+
 # Pinouts & GPIO Pins #
+For details on the ESP32 GPIO ports, see the [ESP32 GPIO](#esp32-gpio) section below.  
+For details on the STM32F030 GPIO ports, see the [STM32F030 GPIO](#stm32f030-gpio) section below.
+
+# ESP32 GPIO
 
 | ESP32 Pin | Analog | DAC/T | Serial | Function | Note |
 | --- | --- | --- | --- | --- | --- |
-| GPIO0  | ADC2-1  | Touch-1 |           | **NOT available**, used by Bootloader and PHY | Default **Pull-Up**. Bootloader Mode=0, Run Mode=1 |
+| GPIO0  | ADC2-1  | Touch-1 |           | **NOT available** if Ethernet used, used by Bootloader and PHY | Default **Pull-Up**. Bootloader Mode=0, Run Mode=1 |
 | GPIO1  |         |         | TX0       | **Available** if USB comm not used. USB TX.| On the ESP32-NodeMCU, this pin is used for the USB to Serial converter TX pin    |
 | GPIO2  | ADC2-2  | Touch-2 |           | **Available** if SD not used. SD Card. 47k PU| Default **Pull-Down**. Must be 0 to enter Bootloader Mode (when GPIO0=0). |
 | GPIO3  |         |         | RX0       | **Available** if USB comm not used. USB RX via jumper. | On the ESP32-NodeMCU, this pin is used for the USB to Serial converter RX pin    |
@@ -130,7 +137,8 @@ decreasing automatically, which makes it useful for the LED RGB color-gradient g
 The ESP32 has 10 capacitive sensing GPIOs.
 
 ## Buttons and LEDs ##
-The following pins are used for Buttons and LEDs on common ESP32 based boards:
+By default, GPIO5 is used for the user LED, and GPIO34 for the user button. Both these are enabled
+via solder jumpers on the back of the board, and can be disabled by opening the solder jumper. Both the LED and user button are also connected to port pins on the STM32F030, and can be controlled via it, thus freeing GPIO5 and GPIO34 of the ESP32 chip.
 
 ## JTAG Pins ##
 Pins 12 to 15 are also used for JTAG functions. If JTAG debugging is required, these pins should be used in such a way that they will be
@@ -152,3 +160,7 @@ GPIO2 must also be either left unconnected/floating, or driven Low, in order to 
 ## EN(RST) Pin ##
 The EN pin is the 3.3V regulator’s enable pin. It’s pulled up, so connect to ground to disable the 3.3V regulator. This means that you can use
 this pin connected to a push button to restart your ESP32, for example. This pin does NOT go low during a software reset of the ESP32.
+
+
+# STM32F030 GPIO
+The STM32F030 can be used for general purpose IO.
