@@ -9,8 +9,7 @@ https://github.com/espressif/arduino-esp32#installation-instructions
 In addition, we also used VS Code, with the Microsoft Arduino Plugin.
 
 ## Usage
-In the Tools menu of the IDE, select the "ESP32 Pico Kit" board. We might add the "esp32MX-E" board
-to future versions of Arduino ESP32, but currently it is not required.
+In the Tools menu of the Arduino IDE, select the "ESP32 Pico Kit" board. We might add the "esp32MX-E" board to future versions of Arduino ESP32, but currently it is not required.
 
 ## Additional Modifications
 The followig can be done to have the esp32MX-E listed as an available board in the Tools menu of the IDE, but it is NOT required. As mentioned above, using the "ESP32 Pico Kit" board works fine.   
