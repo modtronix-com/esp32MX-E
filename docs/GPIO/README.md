@@ -6,6 +6,7 @@
 # Pinouts & GPIO Pins #
 For details on the ESP32 GPIO ports, see the [ESP32 GPIO](#esp32-gpio) section below.  
 For details on the STM32F030 GPIO ports, see the [STM32F030 GPIO](#stm32f030-gpio) section below.
+![ ](../../images/esp32MX-E_pinouts.png)
 
 # ESP32 GPIO
 
@@ -31,12 +32,12 @@ For details on the STM32F030 GPIO ports, see the [STM32F030 GPIO](#stm32f030-gpi
 | GPIO25 | ADC2-8  | DAC 1   |           | **NOT available**, used by PHY |     |
 | GPIO26 | ADC2-9  | DAC 2   |           | **NOT available**, used by PHY |     |
 | GPIO27 | ADC2-7  | Touch-7 |           | **NOT available**, used by PHY |     |
-| GPIO32 | ADC1-4  | Touch-9 |           | I2C SCL, can also be\\ **used for user I2C** | XTAL32 |
-| GPIO33 | ADC1-5  | Touch-8 |           | I2C SCL, can also be\\ **used for user I2C** | XTAL32 |
-| GPIO34 | ADC1-6  |         |           | **Available** by default,\\ User Button via Jumper | **Input Only!** No PU or PW! |
-| GPIO35 | ADC1-7  |         |           | **Available** to user.\\  Input only | **Input Only!** No PU or PW! |
-| GPIO36 | ADC1-0  |         |           | **Available** to user.\\  Input only | **Input Only!** No PU or PW! |
-| GPIO39 | ADC1-3  |         |           | **Available** to user.\\  Input only | **Input Only!** No PU or PW! |
+| GPIO32 | ADC1-4  | Touch-9 |           | I2C SCL, can also be<br> **used for user I2C** |  |
+| GPIO33 | ADC1-5  | Touch-8 |           | I2C SCL, can also be<br> **used for user I2C** |  |
+| GPIO34 | ADC1-6  |         |           | **Available** by default,<br> User Button via Jumper | **Input Only!** No PU or PW! |
+| GPIO35 | ADC1-7  |         |           | **Available** to user.<br> Input only | **Input Only!** No PU or PW! |
+| GPIO36 | ADC1-0  |         |           | **Available** to user.<br> Input only | **Input Only!** No PU or PW! |
+| GPIO39 | ADC1-3  |         |           | **Available** to user.<br> Input only | **Input Only!** No PU or PW! |
 
 ## Other Pins that are not available ##
 | ESP32 Pin | Analog | DAC/T | Serial | NodeMCU | Wrover | Note |
