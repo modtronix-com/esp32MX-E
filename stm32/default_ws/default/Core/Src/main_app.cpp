@@ -136,12 +136,12 @@ void mainAppLoop() {
 	// If we find 200 pulses within 3ms, we take the PHY out of reset
 	if (smPhyReset == 1) {
 
-		// If we have been in this state for longer than tmrSense(10ms), reset
+		// If we have been in this state for longer than tmrSense(3ms), reset
 		if (HAL_GetTick() >= tmrSense) {
 			#ifdef ENABLE_DEBUG_UART
-			txBuf[0] = 'R';	// Fail
-			txBuf[1] = 'S';	// Fail
-			txBuf[2] = 'T';	// Fail
+			txBuf[0] = 'R';
+			txBuf[1] = 'S';
+			txBuf[2] = 'T';
 			txBuf[3] = '\n';
 			HAL_UART_Transmit(&huart1, &txBuf[0], 4, 100);
 			#endif
@@ -151,7 +151,7 @@ void mainAppLoop() {
 			senseCnt = 0;	// Reset
 		}
 
-		// If we have been looking for longer than 1ms
+		// A pulse was detected on the GPIO0 pin
 		if(__HAL_GPIO_EXTI_GET_IT(phyOscSense_Pin) != 0) {
 			__HAL_GPIO_EXTI_CLEAR_IT(phyOscSense_Pin);
 			senseCnt++;
@@ -179,7 +179,8 @@ void mainAppLoop() {
 		}
 	}
 	else if (smPhyReset == 2) {
-
+		// For testing only
+		#ifdef ENABLE_DEBUG_UART
 		if(__HAL_GPIO_EXTI_GET_IT(phyOscSense_Pin) != 0) {
 			__HAL_GPIO_EXTI_CLEAR_IT(phyOscSense_Pin);
 			senseCnt++;
@@ -188,13 +189,12 @@ void mainAppLoop() {
 		if (HAL_GetTick() > tmrTemp) {
 			tmrTemp = HAL_GetTick() + 250;	// Every second
 
-			#ifdef ENABLE_DEBUG_UART
 			txBuf[0] = high_nibble_to_ascii_hex((uint8_t)senseCnt);
 			txBuf[1] = low_nibble_to_ascii_hex((uint8_t)senseCnt);
 			txBuf[2] = '\n';
 			HAL_UART_Transmit(&huart1, &txBuf[0], 3, 100);
-			#endif
 		}
+		#endif
 	}
 }
 
