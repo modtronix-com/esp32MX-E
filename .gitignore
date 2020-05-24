@@ -5,6 +5,13 @@
 # Visual Studio Code
 esp32MX-E.code-workspace
 
+# STM32CubeIDE
+stm32/**/.metadata
+stm32/**/RemoteSystemsTempFiles
+stm32/**/**/.settings
+stm32/**/**/Debug
+stm32/**/**/Release
+
 ## Following is from ESP-IDF gitignore file
 .config
 *.o
